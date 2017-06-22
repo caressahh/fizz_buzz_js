@@ -14,4 +14,5 @@ describe("SampleObject", function() {
 
     expect(subject.mySecondFunction(10, 5)).toEqual(15);
   });
+
 });
