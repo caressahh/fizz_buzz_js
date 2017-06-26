@@ -13,10 +13,10 @@ var startNewGame = function() {
   $('#fizzbuzz').removeAttr('disabled');
   $('#none').removeAttr('disabled');
 };
-
+var fizzBuzz = new FizzBuzz();
 var checkUserAnswer = function(userResponse) {
   var randomNumber = $('#randomNumber').text();
-  var result = fizzBuzz.getValue(randomNumber);
+  var result = fizzBuzz.getGameValue(randomNumber);
   displayResult(userResponse,result);
 };
 
@@ -31,8 +31,6 @@ var displayResult = function(userResponse, result){
 };
 
 var onReadyEvents = function () {
-
-  var fizzBuzz = new FizzBuzz();
 
   $('#start').click(function() {
     startNewGame();
