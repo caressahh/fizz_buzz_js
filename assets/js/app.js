@@ -15,6 +15,10 @@ var startNewGame = function() {
     var number = getRandomInt();
     $('#randomNumber').html(number);
   } ,1000);
+  $('#fizz').removeAttr('disabled');
+  $('#buzz').removeAttr('disabled');
+  $('#fizzbuzz').removeAttr('disabled');
+  $('#none').removeAttr('disabled');
 
 
 };
