@@ -8,7 +8,7 @@ FizzBuzz.prototype.getValue = function(num) {
     return 'buzz';
   }
   else if (num % 3 === 0){
-  return 'fizz';
+    return 'fizz';
   }
-  return num;
+    return num;
   };
