@@ -4,6 +4,7 @@ var getRandomInt = function() {
 
 var startNewGame = function() {
   $('#randomNumber').html('Get Ready!');
+  $('#rightOwrong').html('');
   setTimeout(function(){
     var number = getRandomInt();
     $('#randomNumber').html(number);
@@ -14,6 +15,7 @@ var startNewGame = function() {
   $('#none').removeAttr('disabled');
 };
 var fizzBuzz = new FizzBuzz();
+
 var checkUserAnswer = function(userResponse) {
   var randomNumber = $('#randomNumber').text();
   var result = fizzBuzz.getGameValue(randomNumber);
