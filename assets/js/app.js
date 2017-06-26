@@ -17,7 +17,7 @@ var startNewGame = function() {
 var checkUserAnswer = function(userResponse) {
   var randomNumber = $('#randomNumber').text();
   var result = fizzBuzz.getValue(randomNumber);
-displayResult(userResponse,result);
+  displayResult(userResponse,result);
 };
 
 var displayResult = function(userResponse, result){
