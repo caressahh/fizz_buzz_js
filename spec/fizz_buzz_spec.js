@@ -19,4 +19,5 @@ describe("FizzBuzz", function() {
   it("returns 'fizzbuzz' if number is divisible by both 3 and 5", function() {
     expect(fizzBuzz.getValue(15)).toEqual('fizzbuzz');
   });
+
 });
